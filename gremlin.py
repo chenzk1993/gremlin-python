@@ -29,7 +29,6 @@ from gremlin_python.driver.driver_remote_connection import DriverRemoteConnectio
 from gremlin_python.process.traversal import Order
 from gremlin_python.process.traversal import Pick
 from gremlin_python.process.anonymous_traversal import traversal
-
 g = traversal().withRemote(DriverRemoteConnection('ws://gds-bp18oddp33wq14lc150010pub.graphdb.rds.aliyuncs.com:3734/gremlin', 'g', username="gdb", password="w16TuZeaRQdaRE"))
 
 g.V().hasLabel('gdb_sample_person').drop().iterate()
